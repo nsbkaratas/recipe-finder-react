@@ -1,38 +1,109 @@
-.App {
-  text-align: center;
+#nav-bar{
+  background-color:rgb(15,25,30);
+  height: 50px;
+  width: 100%;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+#nav-bar div {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-evenly;
+  list-style: none;
 }
 
-.App-link {
-  color: #61dafb;
+/* *, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  } */
+  
+  header{
+    color: cornsilk;
+    text-align: center;
+    height:50px;
+}
+.header{
+    background-color: rgb(15,25,30);
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+.card{
+    margin: 20px;
+    border-radius: 10px;
+    width: 350px;
+    height: 500px;
+    background-color: white;
+}
+.card h3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card img{
+    height: 200px;
+    width: 200px;
+    border-radius: 10px;
+    margin: 75px;
+}
+.wrapper{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+    margin: 20px 20px 0px 20px;
+}
+#root{
+    height: 100%
+
+}
+.links{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+    margin: 20px;
+}
+.links a{
+    background-color: rgb(247, 214, 234);
+    width: 120px;
+    height: 30px;
+    border-radius: 10px;
+    text-align: center;
+}
+.input{
+    margin-bottom: 15px;
+    align-items: center;
+    height: 30px;
+}
+.btn{
+    margin-bottom: 15px;
+    align-items: center;
+    height: 35px;
+}
+.search{
+    display: flex;
+    display: flex;
+    justify-content: center;
+    /* margin-top: 70px; */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.pain{
+    background-image: url(./Images/joseph-gonzalez-fdlZBWIP0aM-unsplash.jpg);
+    /* background-size: cover; */
+    background-position: center;
+    /* background-repeat: no-repeat; */
+    height: 100%;
+    width: 100%;
+    flex-grow: 1;
+    /* opacity: 0.7; */
+}
+
+.app{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+}
+.header img{
+    height: 70px;
+    width: 70px;
 }
