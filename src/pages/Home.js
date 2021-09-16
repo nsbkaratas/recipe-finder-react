@@ -7,8 +7,10 @@ const Home = (props) => {
     return (        
         <div className="home">
             <Form onChange={props.onChange} onSubmit={props.onSubmit} value={props.value}/>
-            <div className="recipeList"></div>
-            {recipeList}
+            <div className="recipeList">
+                {recipeList}
+            </div>
+            
         </div>
     )
 }

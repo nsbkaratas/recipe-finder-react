@@ -4,7 +4,6 @@ import Footer from './Components/Footer';
 import "./App.css"
 import Home from "./pages/Home"
 import Favorites from "./pages/Favorites"
-import Account from "./pages/Account"
 import {Route, Switch} from "react-router-dom"
 import axios from 'axios'
 
@@ -16,6 +15,15 @@ const App=()=> {
 
  //state for input field
  const [search, setSearch] = useState("")
+
+ //state for modal
+ const [showModal, setShowModal]= useState(false)
+
+ //function for modal
+ const openModal=()=>{
+   setShowModal(true)
+
+ }
 
  //API information
  const API_ID="3b319b91"
@@ -44,16 +52,12 @@ const App=()=> {
       <NavBar/>
       <Switch>
         <Route exact path="/">
-          <Home recipesURL={recipesURL} onChange={e=>setSearch(e.target.value)} onSubmit={handleSubmit} value={search} />
+          <Home recipesURL={recipesURL} onChange={e=>setSearch(e.target.value)} onSubmit={handleSubmit} value={search} showModal={showModal} setShowModal={setShowModal} onClick={openModal} />
         </Route>
 
         <Route exact path="/Favorites">
           <Favorites/>
-        </Route>         
-
-        <Route exact path="/Account">
-          <Account/>
-        </Route>        
+        </Route>              
       </Switch>
       <Footer/>
     </div>
