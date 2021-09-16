@@ -1,3 +1,8 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   }
 #nav-bar{
   background-color:rgb(15,25,30);
   height: 50px;
@@ -15,17 +20,75 @@
     box-sizing: border-box;
   } */
   
-  header{
-    color: cornsilk;
-    text-align: center;
-    height:50px;
+header{
+  color: cornsilk;
+  text-align: center;
+  height:50px;
 }
-.footer {
 
+.footer{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgb(15,25,30);
+  height: auto;
+  width: 100vw;
+  font-family:Arial, Helvetica, sans-serif;
+  padding-top: 40px;
+  color: aliceblue;
 }
-.footer .facebook{
-  
+.footer-content{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
 }
+.footer-content h3{
+  font-size: 1.8rem;
+  font-weight: 400;
+  text-transform: capitalize;
+  line-height: 3rem;
+}
+.footer-content p{
+  max-width: 500px;
+  margin: 10px auto;
+  line-height: 28px;
+  font-size: 14px;
+}
+ul{
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem 0 3rem 0;
+}
+ul li{
+  margin: 0 10px;
+}
+ul a{
+  text-decoration:none ;
+  color: #ffff;
+}
+.footer img{
+  height: 30px;
+  width: 30px;
+}
+.footer-bottom{
+  background-color: #000;
+  width: 100vw;
+  padding: 20px 0;
+  text-align: center;
+}
+.footer-bottom p{
+  font-size: 14px;
+  word-spacing: 2px;
+  text-transform: capitalize;
+}
+
+
+
 .header{
     background-color: rgb(15,25,30);
     display: flex;
@@ -50,7 +113,7 @@
     border-radius: 10px;
     margin: 75px;
 }
-.wrapper{
+.recipeList{
     display:flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -92,16 +155,17 @@
     /* margin-top: 70px; */
 }
 
-.pain{
+/* .home{
     background-image: url(./Images/joseph-gonzalez-fdlZBWIP0aM-unsplash.jpg);
-    /* background-size: cover; */
+    background-size: cover;
     background-position: center;
-    /* background-repeat: no-repeat; */
+    background-repeat: no-repeat;
     height: 100%;
     width: 100%;
     flex-grow: 1;
-    /* opacity: 0.7; */
-}
+    opacity: 0.7;
+  } */
+
 
 .app{
     height: 100vh;

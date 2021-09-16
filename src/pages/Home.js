@@ -4,10 +4,10 @@ import RecipeCard from '../Components/RecipeCard'
 
 const Home = (props) => {
     const recipeList=props.recipesURL.map(recipes => <RecipeCard recipe={recipes}/>)
-    return (
-        
-        <div>
+    return (        
+        <div className="home">
             <Form onChange={props.onChange} onSubmit={props.onSubmit} value={props.value}/>
+            <div className="recipeList"></div>
             {recipeList}
         </div>
     )
