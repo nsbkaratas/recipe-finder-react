@@ -6,6 +6,7 @@ const Cookies = (props) => {
         return(
             <div className="cakes" >
                 <h3>{cookie.recipe.label}</h3>
+                <br/>
                 <img src={cookie.recipe.image} alt=""></img>
                 <div className="links">
                     <a href={cookie.recipe.url} target="_blank">Full Recipe</a>

@@ -4,14 +4,17 @@ const Breakfast = (props) => {
     console.log(props)
     const breakfastList=props.breakfast.map((breakfast)=>{
         return(
-            <div className="cakes" >
-            <h3>{breakfast.recipe.label}</h3>
-             <img src={breakfast.recipe.image} alt=""></img>
-           <div className="links">
-                <a href={breakfast.recipe.url} target="_blank">Full Recipe</a>
+            <div >
+                <div className="cakes" >
+                    <h3>{breakfast.recipe.label}</h3>
+                    <br/>
+                    <img src={breakfast.recipe.image} alt=""></img>
+                    <div className="links">
+                        <a href={breakfast.recipe.url} target="_blank">Full Recipe</a>
+                    </div>                            
+                </div>
             </div>
             
-        </div>
         )
     })
     return (

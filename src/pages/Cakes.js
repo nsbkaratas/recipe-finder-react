@@ -7,6 +7,7 @@ const Cakes = (props) => {
         return(
             <div className="cakes" >
             <h3>{cake.recipe.label}</h3>
+            <br/>
              <img src={cake.recipe.image} alt=""></img>
            <div className="links">
                 <a href={cake.recipe.url} target="_blank">Full Recipe</a>

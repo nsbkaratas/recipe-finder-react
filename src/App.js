@@ -107,7 +107,9 @@ const [breakfast, setBreakfastURL]= useState([])
           <Cookies cookies={cookies}/>
         </Route>              
         <Route exact path="/breakfast">
-          <Breakfast breakfast={breakfast}/>
+          <div className="comp-recp-list">
+            <Breakfast breakfast={breakfast}/>
+          </div>          
         </Route>                                      
       </Switch>
       <Footer/>

@@ -118,17 +118,7 @@ ul a{
     border-radius: 10px;
     margin: 75px;
 }
-.recipeList{
-    display:flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 20px;
-    margin: 20px 20px 0px 20px;
-}
-#root{
-    height: 100%
 
-}
 .card div{
     display:flex;
     flex-wrap: wrap;
@@ -142,6 +132,53 @@ ul a{
     height: 30px;
     border-radius: 10px;
     text-align: center;
+}
+.cakes{
+  margin: 20px;
+  border-radius: 10px;
+  width: 350px;
+  height: 400px;
+  background-color: white;
+}
+.cakes h3{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cakes img{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  width: 200px;
+  border-radius: 10px;
+  margin: auto
+}
+
+.cakes div{
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+  margin: 20px;
+}
+.cakes div a{
+  background-color: rgb(247, 214, 234);
+  width: 120px;
+  height: 30px;
+  border-radius: 10px;
+  text-align: center;
+}
+.comp-recp-list{
+  display:flex;
+  flex-wrap: wrap;
+}
+.recipeList{
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px;
+  margin: 20px 20px 0px 20px;
 }
 .input{
     margin-bottom: 15px;
