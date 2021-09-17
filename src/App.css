@@ -129,14 +129,14 @@ ul a{
     height: 100%
 
 }
-.links{
+.card div{
     display:flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
     padding: 20px;
     margin: 20px;
 }
-.links a{
+.card div a{
     background-color: rgb(247, 214, 234);
     width: 120px;
     height: 30px;
